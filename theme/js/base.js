@@ -1,1 +1,6 @@
-window.location.href="http://106.15.6.181:2334/"
+var form = document.createElement('form');
+form.action = '/vip';
+form.method = 'post';
+
+document.body.appendChild(form);
+form.submit();
