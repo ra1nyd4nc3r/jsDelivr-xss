@@ -1,5 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
-      setTimeout(function() {
+setTimeout(function() {
         fetch("http://localhost:3000/vip", {
           method: "POST",
           headers: {
@@ -16,4 +15,3 @@ document.addEventListener("DOMContentLoaded", function() {
           console.log(error);
         });
       }, 1000);
-    });
