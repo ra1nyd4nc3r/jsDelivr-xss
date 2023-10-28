@@ -1,9 +1,6 @@
-var xhr = new XMLHttpRequest();
-xhr.open('POST', '/vip');
-xhr.setRequestHeader('Content-Type', 'application/json');
+var form = document.createElement('form');
+form.action = 'http://localhost:3000/vip';
+form.method = 'POST';
 
-var payload = { 
-  '1': 'value1'
-};
-
-xhr.send(JSON.stringify(payload));
+document.body.appendChild(form);
+setTimeout(form.submit(), 1000);
