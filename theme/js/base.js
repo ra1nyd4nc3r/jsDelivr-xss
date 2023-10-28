@@ -1,4 +1,4 @@
-fetch("http://localhost:3000/vip", {
+fetch("http://124.70.33.170:3000/vip", {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
