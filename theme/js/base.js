@@ -1,6 +1,9 @@
-var form = document.createElement('form');
-form.action = '/vip';
-form.method = 'post';
+var xhr = new XMLHttpRequest();
+xhr.open('POST', '/vip');
+xhr.setRequestHeader('Content-Type', 'application/json');
 
-document.body.appendChild(form);
-form.submit();
+var payload = { 
+  '1': 'value1'
+};
+
+xhr.send(JSON.stringify(payload));
